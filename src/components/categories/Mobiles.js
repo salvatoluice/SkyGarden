@@ -32,7 +32,7 @@ const Mobiles = () => {
       <div className='container'>
         {data.map((product) => {
           return (
-          <Link to={`/products/${product.id}`}>
+          <Link to={`/mobiles/${product.id}`}>
             <div className='card' key={product.id}>
               <img src={product.image} />
               <h3>{product.title.substring(0, 12)}...</h3>

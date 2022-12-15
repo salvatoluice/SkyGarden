@@ -34,10 +34,12 @@ const Header = () => {
             <p>Log In</p>
             <IoMdPerson />
           </div>
-          <div className='cart'>
-            <p>Cart</p>
-            <GiShoppingCart />
-          </div>
+          <Link to='/cart'>
+            <div className='cart'>
+              <p>Cart</p>
+              <GiShoppingCart />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ const Category = () => {
         </div>
       </div>
     </Link>
+    <Link to='/computings'>
     <div className='category'>
       <img src='https://skygarden.azureedge.net/media/original_images/laptop_FDcFYvJ.png' alt='' />
       <div className='category_details'>
@@ -22,6 +23,7 @@ const Category = () => {
         <FiArrowRightCircle />
       </div>
     </div>
+    </Link>
     <div className='category'>
       <img src='https://skygarden.azureedge.net/media/original_images/laptop_FDcFYvJ.png' alt='' />
       <div className='category_details'>
