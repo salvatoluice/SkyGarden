@@ -1,0 +1,37 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3rem;
+    gap: 5rem;
+    padding-bottom: 3rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    width: 230px;
+    align-items: center;
+}
+
+.category img {
+    width: 100px;
+}
+
+.category_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category_details h4 {
+    color: #000;
+    text-decoration: none;
+    padding-right: 2rem;
+}
