@@ -4,8 +4,10 @@ import { IoMdCall, IoMdPerson } from 'react-icons/io'
 import { FiSearch } from 'react-icons/fi'
 import { GiShoppingCart } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Header = () => {
+  const state = useSelector((state) => state.handleCart)
   return (
     <div className='navbar'>
       <div className='top-nav'>
@@ -36,7 +38,7 @@ const Header = () => {
           </div>
           <Link to='/cart'>
             <div className='cart'>
-              <p>Cart</p>
+              <p>Cart ({state.length})</p>
               <GiShoppingCart />
             </div>
           </Link>

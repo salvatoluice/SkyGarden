@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from 'react'
+import { addCart } from '../../redux/action'
 import { useParams } from 'react-router-dom';
 import './product.css'
+import { useDispatch } from 'react-redux';
 
 const Product = () => {
   const {id} = useParams();
   const [product, setProduct] = useState([]);
+
+  const dispatch = useDispatch();
+  const addProduct = (product) => {
+      dispatch(addCart(product));
+  }
 
   useEffect(() => {
     fetch(`http://127.0.0.1:3000/products/${id}`)
@@ -20,7 +27,7 @@ const Product = () => {
           <h2>{product.title}</h2>
           <h4>Seller: {product.seller}</h4>
           <h1>Ksh. {product.price}</h1>
-          <button>Add to cart</button>
+          <button onClick={() => addProduct(product)}>Add to cart</button>
         </div>
       </div>
       <div className='description'>

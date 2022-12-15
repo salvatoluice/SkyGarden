@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { addCart } from '../../redux/action'
 import { useDispatch } from 'react-redux';
+import { addCart } from '../../redux/action'
 import { useParams } from 'react-router-dom';
 
-const Mobile = () => {
+const Computer = () => {
     const {id} = useParams();
     const [product, setProduct] = useState([]);
 
@@ -13,7 +13,7 @@ const Mobile = () => {
     }
   
     useEffect(() => {
-      fetch(`http://127.0.0.1:3000/mobiles/${id}`)
+      fetch(`http://127.0.0.1:3000/computings/${id}`)
       .then((res) => res.json())
       .then((product => setProduct(product)));
     }, [])
@@ -36,4 +36,4 @@ const Mobile = () => {
   )
 }
 
-export default Mobile
+export default Computer

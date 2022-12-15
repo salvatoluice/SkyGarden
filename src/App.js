@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Cart from './components/Cart/Cart';
+import Computer from './components/categories/Computer';
 import Computing from './components/categories/Computing';
 import Mobile from './components/categories/Mobile';
 import Mobiles from './components/categories/Mobiles';
@@ -18,7 +19,7 @@ function App() {
         <Route exact path='/computings' element={<Computing />} />
         <Route exact path='/products/:id' element={<Product />} />
         <Route exact path='/mobiles/:id' element={<Mobile />} />
-        <Route exact path='/computings/:id' element={<Product />} />
+        <Route exact path='/computings/:id' element={<Computer />} />
         <Route exact path='/cart' element={<Cart />} />
       </Routes>
     </div>
