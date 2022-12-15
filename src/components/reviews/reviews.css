@@ -1,0 +1,27 @@
+.reviews_container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.reviews {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.reviews_body {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: left;
+    width: 400px;
+}
+
+.reviews_body p {
+    color: gray;
+}
