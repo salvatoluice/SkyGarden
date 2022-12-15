@@ -12,6 +12,7 @@ import Register from './components/Login/Register';
 import Reset from './components/Login/Reset';
 import Dashboard from './components/Login/Dashboard';
 import Product from './components/products/Product';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/reset" element={<Reset />} />
         <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

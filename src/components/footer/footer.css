@@ -1,0 +1,88 @@
+.footer {
+    background: #000;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 100%;
+    color: gray;
+    padding-bottom: 2rem;
+}
+
+.footer  a {
+    color: gray;
+}
+
+.footer a:hover {
+    color: lightgreen;
+}
+
+.upper {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+}
+
+.company h1 {
+    color: #fff;
+}
+
+.company a {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h1 {
+    color: #fff;
+}
+
+.contact a {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+.contact p {
+    padding-left: 0.5rem;
+}
+
+.shopping {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping h1 {
+    color: #fff;
+}
+
+.shopping a {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.lower {
+    background: #000;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.brand {
+    background: #000;
+}
+
+.brand img {
+    width: 100px;
+    height: 40px;
+}
