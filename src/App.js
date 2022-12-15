@@ -7,6 +7,10 @@ import Mobile from './components/categories/Mobile';
 import Mobiles from './components/categories/Mobiles';
 import Header from './components/Header/Header';
 import Home from './components/home/Home';
+import Login from './components/Login/Login';
+import Register from './components/Login/Register';
+import Reset from './components/Login/Reset';
+import Dashboard from './components/Login/Dashboard';
 import Product from './components/products/Product';
 
 function App() {
@@ -21,6 +25,10 @@ function App() {
         <Route exact path='/mobiles/:id' element={<Mobile />} />
         <Route exact path='/computings/:id' element={<Computer />} />
         <Route exact path='/cart' element={<Cart />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path="/reset" element={<Reset />} />
+        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
     </div>
   );

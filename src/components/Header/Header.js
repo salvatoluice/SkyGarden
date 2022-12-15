@@ -32,10 +32,12 @@ const Header = () => {
           <button><FiSearch className='search_icon'/></button>
         </div>
         <div className='right'>
-          <div className='login'>
-            <p>Log In</p>
-            <IoMdPerson />
-          </div>
+          <Link to='/login'>
+            <div className='logins'>
+              <p>Log In</p>
+              <IoMdPerson />
+            </div>
+          </Link>
           <Link to='/cart'>
             <div className='cart'>
               <p>Cart ({state.length})</p>
