@@ -1,0 +1,12 @@
+.brands {
+    background: #fff;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.brands img {
+    height: 100%;
+}
