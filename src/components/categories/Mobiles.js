@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import './category.css'
 
 const Mobiles = () => {
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:3000/mobiles")
+    .then((res => res.json()))
+    .then((data) => setData(data));
+  }, [])
+
+
   return (
     <div className='app_mobiles'>
       <div className='header_starter'>
@@ -15,15 +27,24 @@ const Mobiles = () => {
         </div>
       </div>
 
-      <div className='card'>
-        <img src='https://skygarden.azureedge.net/images-thumbnails/products/1314451-ab5b24bd133e46e795ce052165868eed.jpg' />
-        <h3>Blackberry Passport Battery</h3>
-        <p>Meroda Enterprices Kenya</p>
-        <h1>Ksh. 1, 499</h1>
-        <button>BUY NOW</button>
+      <div className='products'>
+      <h3>Mobile Phones</h3>
+      <div className='container'>
+        {data.map((product) => {
+          return (
+          <Link to={`/products/${product.id}`}>
+            <div className='card' key={product.id}>
+              <img src={product.image} />
+              <h3>{product.title.substring(0, 12)}...</h3>
+              <p>{product.seller}</p>
+              <h3>{product.price}</h3>
+              <Link to={`/products/${product.id}`}>BUY NOW</Link>
+            </div>
+          </Link>
+          )
+        })}
       </div>
-
-
+    </div>
     </div>
   )
 }
