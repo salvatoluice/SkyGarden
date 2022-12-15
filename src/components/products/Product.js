@@ -1,14 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 import './product.css'
 
 const Product = () => {
+  const {id} = useParams();
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://127.0.0.1:3000/products/${id}`)
+    .then((res) => res.json())
+    .then((product => setProduct(product)));
+  }, [])
+
   return (
-    <div className='card'>
-      <img src='https://skygarden.azureedge.net/images-thumbnails/products/1314451-ab5b24bd133e46e795ce052165868eed.jpg' />
-      <h3>Blackberry Passport Battery</h3>
-      <p>Meroda Enterprices Kenya</p>
-      <h3>Ksh. 1, 499</h3>
-      <button>BUY NOW</button>
+    <div className='main-container'>
+      <div className='product_container'>
+        <img src={product.image} />
+        <div className='info'>
+          <h2>{product.title}</h2>
+          <h4>Seller: {product.seller}</h4>
+          <h1>Ksh. {product.price}</h1>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div className='description'>
+        <h4>DESCRIPTION</h4>
+        <p>{product.description}</p>
+      </div>
     </div>
   )
 }

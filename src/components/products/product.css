@@ -8,6 +8,11 @@
     margin-bottom: 1rem;
     padding-bottom: 2rem;
     padding-top: 1rem;
+    height: 450px;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
@@ -34,10 +39,74 @@
 }
 
 .container {
-    width: 100%;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
     padding-left: 1rem;
     gap: 1rem;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }               
+
+.products h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 9rem;
+}
+
+.product_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    gap: 7rem;
+    background: #fff;
+}
+.info h1 {
+    color: lightgreen;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.info h4 {
+    padding-top: 3rem;
+}
+
+.info button {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 2px solid greenyellow;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: lightgreen;
+    font-size: 19px;
+    background: transparent;
+}
+
+.info button:hover {
+    background: lightgreen;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.description {
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.description h4 {
+    color: gray;
+    font-size: 1.25rem;
+}
