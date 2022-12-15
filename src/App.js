@@ -3,6 +3,7 @@ import './App.css';
 import Mobiles from './components/categories/Mobiles';
 import Header from './components/Header/Header';
 import Home from './components/home/Home';
+import Products from './components/products/Products';
 
 function App() {
   return (
