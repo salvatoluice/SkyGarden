@@ -1,10 +1,12 @@
 import React from 'react'
 import { FiArrowRightCircle } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
+import Hero from './Hero'
 
 const Home = () => {
   return (
     <div className='app_home'>
+      <Hero />
       <div className='categories'>
         <Link to='/mobiles'>
           <div className='category'>

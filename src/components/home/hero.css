@@ -1,0 +1,46 @@
+.hero {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding-top: 150px;
+}
+
+.image_slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_slider .essentials {
+    padding-top: 0.5rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.essentials button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    margin-right: 2rem;
+    text-align: left;
+    padding: 0.5rem;
+    border-radius: 6px;
+    width: 150px;
+}
+
+.essentials button:hover  {
+    background: lightgreen;
+    cursor: pointer;
+}
+
+.right_image {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    gap: 1.5rem;
+}
+
+.right_image img {
+    border-radius: 6px;
+}
