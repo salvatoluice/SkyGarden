@@ -115,3 +115,7 @@
     align-items: center;
     margin-left: 3rem;
 }
+
+p.name {
+    color: lightgreen;
+}

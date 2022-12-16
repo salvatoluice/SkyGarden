@@ -1,5 +1,6 @@
 .login {
     padding-top: 10rem;
+    padding-bottom: 10rem;
     height: 300px;
     width: 100%;
     display: flex;
@@ -24,11 +25,16 @@
     margin-bottom: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: lightgreen;
   }
   .login__google {
-    background-color: #4285f4;
+    background-color: #000;
   }
   .login div {
     margin-top: 7px;
+  }
+
+  .login a {
+    color: lightgreen;
+    /* font-weight: bold; */
   }
