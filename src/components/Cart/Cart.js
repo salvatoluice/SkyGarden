@@ -32,7 +32,7 @@ const Cart = ({product}) => {
                     <div className='description'>
                         <h3>{product.title}</h3>
                         <p>
-                            {product.qty} X Ksh. {product.price} = <span className='total'>{product.qty * product.price}</span>
+                            {product.qty} X Ksh. {product.price} = <span className='total'>Ksh. {product.qty * product.price}</span>
                         </p>
                         <button style={{color: 'red'}} className='action' onClick={() => handleDel(product)}><AiOutlineMinus /></button>
                         <button style={{color: 'green'}} className='actions' onClick={() => handleAdd(product)}><GrFormAdd /></button>
