@@ -93,7 +93,7 @@ https://github.com/salvatoluice/SkyGarden.git
 
 
 
-                  **KNOWN BUGS**
+##                  **KNOWN BUGS**
  * The site is not fully functional, therefore only two of the provided categories. The main aim was to make the site functional,which has been achied, however, the rest of the features are coming inin this week.
  * The checkout feature is in development and is coming in soon.
 * The mobile and tablet media queries havent been implemented yet, and are coming insoon.
