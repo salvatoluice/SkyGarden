@@ -1,0 +1,75 @@
+.app_sell {
+    background-image: url("https://sky.garden/assets/sell-on-sky/desktop-sell-hero.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 600px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-top: 8rem;
+    color: #fff;
+    padding-left: 4rem;
+    /* width: 100%; */
+}
+
+.app_sell h1 {
+    width: 30%;
+    font-size: 3rem;
+}
+
+.app_sell p{
+    width: 30%;
+    color: gray;
+}
+
+.app_sell button {
+    border: 1.5px solid lightgreen;
+    outline: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+.app_sell button:hover {
+    background: lightgreen;
+    color: #fff;
+    cursor: pointer;
+}
+
+.showcase {
+    background-image: url("https://sky.garden/assets/sell-on-sky/desktop-office-chair-poster.jpg");
+    background-color: #cccccc;
+    height: 600px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    padding-left: 4rem;
+}
+
+.ticks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticks h3 {
+    padding-left: 1rem;
+}
+
+.showcase_text h1 {
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.payments {
+    display: flex;
+    /* width: 100%; */
+    padding: 2rem;
+    align-items: center;
+}
+
+.payment_text {
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

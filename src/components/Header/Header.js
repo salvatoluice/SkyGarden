@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 
-import { auth, db, logout } from "../../firebase";
+import { auth, db } from "../../firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
 
 const Header = () => {
@@ -41,7 +41,9 @@ const Header = () => {
           <p><IoMdCall /> +254 709 782 000</p>
         </div>
         <div className='nav_right'>
+         <Link to='/sell'>
           <p>Sell</p>
+         </Link>
           <p>Help & Contact</p>
         </div>
       </div>

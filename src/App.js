@@ -13,6 +13,7 @@ import Reset from './components/Login/Reset';
 import Dashboard from './components/Login/Dashboard';
 import Product from './components/products/Product';
 import Footer from './components/footer/Footer';
+import Sell from './components/sell/Sell';
 
 function App() {
   return (
@@ -26,10 +27,12 @@ function App() {
         <Route exact path='/mobiles/:id' element={<Mobile />} />
         <Route exact path='/computings/:id' element={<Computer />} />
         <Route exact path='/cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path="/reset" element={<Reset />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        <Route exact path='/login' element={<Login />} />
+        <Route exact path='/register' element={<Register />} />
+        <Route exact path="/reset" element={<Reset />} />
+        <Route exact path='/dashboard' element={<Dashboard />} />
+        <Route exact path='/sell' element={<Sell />} />
+
       </Routes>
       <Footer />
     </div>

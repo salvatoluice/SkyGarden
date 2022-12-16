@@ -33,6 +33,10 @@
     padding-left: 2rem;
 }
 
+.nav_right a {
+    color: #fff;
+}
+
 
 .bottom_nav {
     display: flex;
