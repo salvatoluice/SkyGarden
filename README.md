@@ -8,6 +8,7 @@ Author's name: **salvato Luis**
 
 
 **SkyGarden**
+# NOTICE
 
 This react project is a clone of the official skygarden web app. It's made mainly for learning purposes and has no intention to conflict with the official website. It's not made to make any profit or to benefit any individual or organization whatsoever.
 It's not a fully developed site and therefore not intended to be used as a source of kind of income.
