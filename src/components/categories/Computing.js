@@ -6,7 +6,7 @@ const Computing = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/computings")
+    fetch("https://skygardenbackend-production.up.railway.app/computings")
     .then((res => res.json()))
     .then((data) => setData(data));
   }, [])

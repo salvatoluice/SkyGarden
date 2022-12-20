@@ -13,7 +13,7 @@ const Mobile = () => {
     }
   
     useEffect(() => {
-      fetch(`http://127.0.0.1:3000/mobiles/${id}`)
+      fetch(`https://skygardenbackend-production.up.railway.app/mobiles/${id}`)
       .then((res) => res.json())
       .then((product => setProduct(product)));
     }, [])
