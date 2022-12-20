@@ -14,6 +14,7 @@ import Dashboard from './components/Login/Dashboard';
 import Product from './components/products/Product';
 import Footer from './components/footer/Footer';
 import Sell from './components/sell/Sell';
+import Payment from './components/payment/Payment';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="/reset" element={<Reset />} />
         <Route exact path='/dashboard' element={<Dashboard />} />
         <Route exact path='/sell' element={<Sell />} />
+        <Route exact path='/payment' element={<Payment />} />
 
       </Routes>
       <Footer />

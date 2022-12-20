@@ -4,6 +4,7 @@ import { addCart, delCart } from "../../redux/action";
 import { AiOutlineMinus } from 'react-icons/ai'
 import { GrFormAdd } from 'react-icons/gr'
 import './Cart.css'
+import { Link } from 'react-router-dom';
 
 const Cart = ({product}) => {
     const state = useSelector((state) => state.handleCart);
@@ -46,7 +47,9 @@ const Cart = ({product}) => {
         return (
             <>
                 <div className='btn'>
-                    <h3>Proceed to Payment</h3>
+                    <Link to='/payment'>
+                        <h3>Proceed to Payment</h3>
+                    </Link>
                 </div>
             </>
         )

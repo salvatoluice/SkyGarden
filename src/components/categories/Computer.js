@@ -13,7 +13,7 @@ const Computer = () => {
     }
   
     useEffect(() => {
-      fetch(`http://127.0.0.1:3000/computings/${id}`)
+      fetch(`https://skygardenbackend-production.up.railway.app/computings/${id}`)
       .then((res) => res.json())
       .then((product => setProduct(product)));
     }, [])
